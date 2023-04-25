@@ -1,0 +1,138 @@
+@font-face {
+  font-family: "game_of_squidsregular";
+  src: url("../public/font/game_of_squids-webfont.woff2") format("woff2"),
+    url("../public/font/game_of_squids-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  --pink: #ed1b76;
+  --pink-light: #f44786;
+  --green: #037a76;
+  --green-light: #249f9c;
+  --white: #ffffff;
+  --bg: #000;
+}
+::after,
+::before {
+  content: "";
+  display: block;
+  top: 0;
+  position: absolute;
+}
+
+body {
+  background-color: var(--bg);
+  overflow: hidden;
+}
+main {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../public/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+ 
+  background-attachment: fixed;
+  overflow: hidden;
+}
+/* main::after {
+  height: 100%;
+  width: 100%;
+ 
+  z-index: 2;
+} */
+.nav {
+  width: 10vmin;
+  height: 100vh;
+  /* background-color: white; */
+  z-index: 3;
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.nav a {
+  text-decoration: solid;
+  color: var(--pink);
+}
+button {
+  all: unset;
+  margin: 1vmin;
+  width: 6vmin;
+  height: 6vmin;
+  color: var(--pink);
+  font-family: "game_of_squidsregular";
+}
+button:hover {
+  color: var(--green-light);
+  cursor: pointer;
+}
+h1 {
+  font-size: 12vmin;
+}
+p,
+h1 {
+  font-family: "game_of_squidsregular";
+  color: var(--white);
+  margin: 5vmin 0;
+  z-index: 5;
+ 
+}
+p {
+  position: relative;
+  width: 70vmin;
+  font-size: 3vmin;
+  bottom: 5vmin;
+}
+.text-container {
+  margin: 0 10vmin;
+  /* background-color: white; */
+  position: relative;
+  top: 10%;
+}
+.text-container h1:nth-child(2) {
+  position: relative;
+  left: 6.48vmin;
+  bottom: 6.6vmin;
+}
+span i{
+  display: block;
+  position: absolute;
+  background-color: var(--pink);
+  height: 4vmin;
+  width: 4vmin;
+  top: 5.8vmin;
+  z-index: 2;
+}
+span {
+  display: block;
+  z-index: 1;
+}
+/* .text-container h1:nth-child(1) i {
+ left: 13vmin;
+} */
+span i:nth-child(1) {
+  left: 13vmin;
+  background-color: red;
+ }
+ span i:nth-child(2) {
+  left: 50vmin;
+ }
+ span i:nth-child(3) {
+  left: 50vmin;
+ }
+ .resume-btn{
+  border: .2vmin solid var(--pink);
+  width: auto;
+  height: auto;
+  font-size: 3vmin;
+  padding: 1vmin 1.2vmin;
+ }
